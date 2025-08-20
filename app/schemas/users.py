@@ -24,3 +24,7 @@ class UserSearchParams(BaseModel):
     username: str | None = None
     age: conint(gt=0) | None = None
     gender: GenderEnum | None = None
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
